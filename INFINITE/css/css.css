@@ -1,0 +1,163 @@
+﻿/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+/* CSS Variable */
+.root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    
+}
+/*Navigation Bar Logo & Image */
+
+#logo{
+    margin: 3px 5px;
+
+}
+#logo img{
+    height: 70px;
+    margin: 0px 0px;
+}
+/* Navigation Bar List Styling */
+
+#navbar{
+    position: relative;
+}
+#navbar ul{
+    display: flex;
+
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+
+}
+
+#navbar ul li{
+    list-style: none;
+   
+   font-size: 1.3rem;
+   padding: 3px 22px;
+   
+}
+#navbar ul li a{
+    color: white;
+        display: block;
+        border-radius: 20px;
+        text-decoration: none;
+}
+
+#navbar ul li:hover{
+   color: black;
+   border-radius: 15px;
+  background-color: whitesmoke;
+}
+/* Home Section */
+
+#home{
+    display: flex;
+    height: 633px;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background:url('Project/din.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;a
+    opacity: 0.89;
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Arsenal', sans-serif;
+}
+
+/* Services Center */
+
+
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2x solid brown;
+   
+    }
+    
+#services .box img{
+    display: block;
+    margin: auto;
+    border: 2x solid brown;
+    height: 150px;
+    
+    
+    
+    
+}
+#services{
+    
+}
+#services{
+    
+}
+#services{
+    
+}
+
+/* Utility class */
+.h-primary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.h-primary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: ghostwhite;
+    margin: 17px;
+    border-radius: 8px;
+}
+
+.btn:hover{
+    color: black;
+    
+   background-color: rgb(114, 98, 98);
+}
+
+.center{
+    text-align: center;
+}
